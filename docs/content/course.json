@@ -1,0 +1,152 @@
+{
+  "course": {
+    "title": "ML for Beginners",
+    "eyebrow": "QALAM presents · Microsoft's curriculum, digested",
+    "subtitle": "The classic 12-week tour of classical ML — pumpkins, cuisines, hotel reviews and power grids.",
+    "source_name": "Microsoft (ML for Beginners)",
+    "source_url": "https://github.com/microsoft/ML-For-Beginners",
+    "fork_url": "https://github.com/matx104/ML-For-Beginners",
+    "credit_line": "Curriculum © Microsoft · MIT License · digested with credit, shared free.",
+    "after_title": "After the course",
+    "after_note": "The Data Science and AI for Beginners petals continue the line; then deep learning frameworks.",
+    "og_url": "https://matx104.github.io/ML-For-Beginners/",
+    "og_image": "img/og.png"
+  },
+  "modules": [
+    {
+      "id": "m1", "num": 1, "title": "Introduction",
+      "blurb": "What ML is, where it came from, and the fairness questions it drags along.",
+      "lessons": [
+        {"id": "1", "title": "Introduction to machine learning", "objective": "The basic concepts behind ML.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/1-Introduction/1-intro-to-ML/README.md",
+         "keys": ["ML: programs that learn patterns from data instead of being told the rules", "Supervised (labeled), unsupervised (structure), reinforcement (reward)", "Features in, model out, predictions onwards — the whole pipeline"]},
+        {"id": "2", "title": "The history of machine learning", "objective": "How the field got here.", "minutes": 30,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/1-Introduction/2-history-of-ML/README.md",
+         "keys": ["From statistics and perceptrons (1958) to deep learning winters and springs", "Data + compute + algorithms: revolutions happen when all three move", "Knowing the history explains today's vocabulary"]},
+        {"id": "3", "title": "Fairness and machine learning", "objective": "The philosophical issues around fairness.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/1-Introduction/3-fairness/README.md",
+         "keys": ["Biased data in, biased model out — math does not launder bias", "Fairness definitions conflict; pick one and defend it", "Unfairness is measurable: audit before and after training"]},
+        {"id": "4", "title": "Techniques for machine learning", "objective": "The researcher's toolbox.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/1-Introduction/4-techniques-of-ML/README.md",
+         "keys": ["Regression predicts numbers, classification predicts labels, clustering finds groups", "Model choice follows question shape, not fashion", "Split data first: train / validation / test — and never peek"]}
+      ]
+    },
+    {
+      "id": "m2", "num": 2, "title": "Regression",
+      "blurb": "Predicting numbers, with North American pumpkin prices as the running dataset.",
+      "lessons": [
+        {"id": "5", "title": "Tools of the trade — Python and Scikit-learn", "objective": "The regression workbench.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/2-Regression/1-Tools/README.md",
+         "keys": ["pandas for data, matplotlib for eyes, Scikit-learn for models", "The Scikit-learn contract: fit(X, y) → predict(X)", "Notebooks are for exploration; scripts are for repeats"]},
+        {"id": "6", "title": "Visualize and clean the data", "objective": "Data preparation for ML.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/2-Regression/2-Data/README.md",
+         "keys": ["Plot first: distributions, scatter, outliers — models are blind, you aren't", "Missing values: drop, impute, or flag — never ignore", "Garbage in, gospel out is the most dangerous pipeline"]},
+        {"id": "7", "title": "Linear and polynomial regression", "objective": "Build regression models that fit.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/2-Regression/3-Linear/README.md",
+         "keys": ["Linear regression: the best straight line through the cost function", "Polynomial curves fit harder shapes — and overfit harder too", "R², MAE, RMSE: one number never tells the whole story"]},
+        {"id": "8", "title": "Logistic regression", "objective": "Classification with a regression tool.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/2-Regression/4-Logistic/README.md",
+         "keys": ["Logistic regression outputs probability, not a number", "Sigmoid squashes the line into 0..1; threshold turns it into a decision", "Despite the name, it's the baseline classifier"]}
+      ]
+    },
+    {
+      "id": "m3", "num": 3, "title": "The web app",
+      "blurb": "Ship the model: a trained predictor behind a web UI.",
+      "lessons": [
+        {"id": "9", "title": "Build a web app to use your model", "objective": "From notebook to product.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/3-Web-App/1-Web-App/README.md",
+         "keys": ["A deployed model is worth ten notebooks", "Save with pickle/joblib/ONNX, load server-side, serve predictions", "Version the model with the app — they upgrade together"]}
+      ]
+    },
+    {
+      "id": "m4", "num": 4, "title": "Classification",
+      "blurb": "Labels, cuisines and recommenders — the most common ML shape.",
+      "lessons": [
+        {"id": "10", "title": "Introduction to classification", "objective": "Clean, prep and visualize for classification.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/4-Classification/1-Introduction/README.md",
+         "keys": ["Classification predicts which bucket — binary, multiclass, multilabel", "Class imbalance: accuracy lies; balance or reweight", "Categorical features need encoding: one-hot usually first"]},
+        {"id": "11", "title": "Classifiers I — the cuisines dataset", "objective": "First supervised classifiers.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/4-Classification/2-Classifiers-1/README.md",
+         "keys": ["Start with logistic regression, then decision trees, then SVMs", "Each classifier has a bias — a shape of problem it believes in", "Cross-validation: trust the average, not the lucky split"]},
+        {"id": "12", "title": "Classifiers II — more classifiers", "objective": "Ensembles and neighbors.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/4-Classification/3-Classifiers-2/README.md",
+         "keys": ["Random forest: many weak trees vote into one strong model", "k-NN: you are the average of your k nearest neighbors", "Ensembles win Kaggle; single trees win explanations"]},
+        {"id": "13", "title": "Applied — a recommender web app", "objective": "Turn the classifier into a product.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/4-Classification/4-Applied/README.md",
+         "keys": ["Recommenders are classification over 'will they like it?'", "Cold start is the product problem hiding in the ML demo", "Prediction serving shape: batch, on-demand, or stream"]}
+      ]
+    },
+    {
+      "id": "m5", "num": 5, "title": "Clustering",
+      "blurb": "Finding groups nobody labeled — Nigerian musical tastes as the dataset.",
+      "lessons": [
+        {"id": "14", "title": "Visualize and prep for clustering", "objective": "Unsupervised data work.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/5-Clustering/1-Visualize/README.md",
+         "keys": ["No labels means no right answer — structure is the goal", "Scale features first: distance metrics punish big numbers", "Density plots and t-SNE give unsupervised eyes"]},
+        {"id": "15", "title": "K-Means clustering", "objective": "The workhorse of unsupervised learning.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/5-Clustering/2-K-Means/README.md",
+         "keys": ["K-Means: pick k centroids, assign, move, repeat", "The elbow method picks k where more clusters stop paying", "Clusters describe, they don't explain — name them yourself"]}
+      ]
+    },
+    {
+      "id": "m6", "num": 6, "title": "Natural language processing",
+      "blurb": "Tea, translation and hotel reviews — language as data.",
+      "lessons": [
+        {"id": "16", "title": "Introduction to NLP", "objective": "NLP basics by building a simple bot.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/6-NLP/1-Introduction-to-NLP/README.md",
+         "keys": ["NLP pipeline: normalize → tokenize → vectorize → model", "Computers count words; meaning must be engineered in (or learned)", "Even a rule-based bot teaches the pipeline"]},
+        {"id": "17", "title": "Common NLP tasks", "objective": "The task zoo.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/6-NLP/2-Tasks/README.md",
+         "keys": ["POS tagging, NER, stemming/lemmatization — the grammar layer", "Bag-of-words and TF-IDF: frequency as meaning, first approximation", "Vectors make text countable; counting makes text modelable"]},
+        {"id": "18", "title": "Translation and sentiment analysis", "objective": "Two workhorse tasks with Jane Austen.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/6-NLP/3-Translation-Sentiment/README.md",
+         "keys": ["Sentiment: polarity scores from lexicons or learned classifiers", "Translation was sequence-to-sequence's proving ground", "Neutral text exists — and breaks naive sentiment models"]},
+        {"id": "19", "title": "Hotel reviews I", "objective": "Sentiment analysis on real reviews.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/6-NLP/4-Hotel-Reviews-1/README.md",
+         "keys": ["Real reviews: slang, sarcasm, spam — the messy middle", "Preprocessing choices dominate classical NLP results", "Evaluate on held-out human labels, not vibes"]},
+        {"id": "20", "title": "Hotel reviews II", "objective": "Reduce and improve the model.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/6-NLP/5-Hotel-Reviews-2/README.md",
+         "keys": ["Feature reduction kills noise and overfitting both", "Confusion matrix: which class is the model lying about?", "Iterate one variable at a time or learn nothing"]}
+      ]
+    },
+    {
+      "id": "m7", "num": 7, "title": "Time series",
+      "blurb": "Forecasting the future from the past — world power usage as the dataset.",
+      "lessons": [
+        {"id": "21", "title": "Introduction to time series forecasting", "objective": "Time as a feature.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/7-TimeSeries/1-Introduction/README.md",
+         "keys": ["Time series: trend + seasonality + noise, decomposed", "Never shuffle time: walk-forward validation, not random splits", "Lag features turn forecasting into regression"]},
+        {"id": "22", "title": "Forecasting with ARIMA", "objective": "The classical forecaster.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/7-TimeSeries/2-ARIMA/README.md",
+         "keys": ["ARIMA = autoregression + integration (differencing) + moving average", "Stationarity first: difference until the trend dies", "ARIMA is a strong baseline that deep learning must beat"]},
+        {"id": "23", "title": "Forecasting with SVR", "objective": "Support vector regression on time.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/7-TimeSeries/3-SVR/README.md",
+         "keys": ["SVR fits a tube around the data — errors inside the tube are free", "Kernel choice is the whole game", "Compare forecasters on the same horizon, fairly"]}
+      ]
+    },
+    {
+      "id": "m8", "num": 8, "title": "Reinforcement learning",
+      "blurb": "Peter, the wolf, and learning by consequence.",
+      "lessons": [
+        {"id": "24", "title": "Introduction to reinforcement learning — Q-Learning", "objective": "States, actions, rewards, Q.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/8-Reinforcement/1-QLearning/README.md",
+         "keys": ["RL: agent, environment, state, action, reward — the loop that learns by doing", "Q-table: the learned value of every move in every situation", "Explore vs exploit: sometimes try the worse move to learn better"]},
+        {"id": "25", "title": "Help Peter avoid the wolf — the Gym", "objective": "Q-Learning in a real environment.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/8-Reinforcement/2-Gym/README.md",
+         "keys": ["Gym gives environments; you give the policy", "Rewards shape behavior — badly designed rewards shape bad behavior", "Episodes, discounting, and patience: credit is delayed"]}
+      ]
+    },
+    {
+      "id": "m9", "num": 9, "title": "In the wild — postscript",
+      "blurb": "Real-world applications, and debugging models with the RAI dashboard.",
+      "lessons": [
+        {"id": "26", "title": "Real-world ML scenarios and applications", "objective": "Classical ML in production everywhere.", "minutes": 30,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/9-Real-World/1-Applications/README.md",
+         "keys": ["Most production ML is boring, classical, and immensely valuable", "Finance, health, agriculture — the pumpkin pipeline scaled up", "The hard part is data and deployment, not the model"]},
+        {"id": "27", "title": "Model debugging with the RAI dashboard", "objective": "Debug ML with Responsible AI tooling.", "minutes": 45,
+         "href": "https://github.com/matx104/ML-For-Beginners/blob/main/9-Real-World/2-Debugging-ML-Models/README.md",
+         "keys": ["Debugging ML = data slices, error analysis, feature attribution", "Model cards document intent and limits — write one", "A deployed model without monitoring is a time bomb"]}
+      ]
+    }
+  ]
+}
